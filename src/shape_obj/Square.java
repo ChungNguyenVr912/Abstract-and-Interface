@@ -1,6 +1,8 @@
 package shape_obj;
 
-public class Square extends Rectangle{
+import resizeable_interface.Resizable;
+
+public class Square extends Rectangle implements Resizable {
     public Square() {
     }
 

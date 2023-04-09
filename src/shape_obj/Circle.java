@@ -1,6 +1,8 @@
 package shape_obj;
 
-public class Circle extends Shape{
+import resizeable_interface.Resizable;
+
+public class Circle extends Shape implements Resizable {
     private double radius = 1.0;
 
     public Circle() {
@@ -29,6 +31,11 @@ public class Circle extends Shape{
 
     public double getPerimeter() {
         return 2 * radius * Math.PI;
+    }
+
+    @Override
+    public void resize(double percent) {
+        radius += radius*percent/100;
     }
 
     @Override
