@@ -35,7 +35,7 @@ public class Rectangle extends Shape implements Resizable {
     public void setLength(double length) {
         this.length = length;
     }
-
+    @Override
     public double getArea() {
         return width * this.length;
     }
