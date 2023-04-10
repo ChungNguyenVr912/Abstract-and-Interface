@@ -1,8 +1,9 @@
 package shape_obj;
 
+import colorable_interface.Colorable;
 import resizeable_interface.Resizable;
 
-public class Square extends Rectangle implements Resizable {
+public class Square extends Rectangle implements Resizable, Colorable {
     public Square() {
     }
 
@@ -31,6 +32,11 @@ public class Square extends Rectangle implements Resizable {
     @Override
     public void setLength(double length) {
         setSide(length);
+    }
+
+    @Override
+    public void howToColor() {
+        System.out.println("Color all four sides");
     }
 
     @Override
